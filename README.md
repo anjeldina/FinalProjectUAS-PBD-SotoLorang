@@ -3,6 +3,8 @@
 > **Final Project Mata Kuliah Pemrograman Basis Data**
 > **Universitas Duta Bangsa Surakarta**
 
+[DRAG FOTO POSTER DI SINI]
+
 Repository ini berisi rancangan dan implementasi basis data untuk sistem kasir (Point of Sales) pada UMKM **Soto Lorang**. Proyek ini bertujuan untuk mentransformasi sistem pencatatan manual (nota kertas) menjadi sistem basis data terkomputerisasi yang terintegrasi.
 
 ## 👥 Anggota Kelompok
@@ -14,7 +16,12 @@ Repository ini berisi rancangan dan implementasi basis data untuk sistem kasir (
 | **Nayla Putri Salsabila** | 240103172 |
 
 ## 📖 Latar Belakang Masalah
-Sebelum adanya sistem ini, Soto Lorang menghadapi kendala:
+Sebelum adanya sistem ini, Soto Lorang menghadapi kendala operasional yang signifikan.
+
+**Kondisi Sebelumnya (Manual):**
+[DRAG FOTO NOTA MANUAL DI SINI]
+
+**Masalah Utama:**
 * Pencatatan transaksi masih manual menggunakan kertas/nota fisik.
 * Sering terjadi *human error* (salah hitung) saat rekap pendapatan harian.
 * Data stok menu dan data penjualan tidak terintegrasi.
@@ -52,6 +59,16 @@ Sistem ini terdiri dari 5 tabel utama yang saling berelasi:
     * *Fungsi:* Memudahkan pemilik melihat riwayat penjualan lengkap tanpa perlu melakukan *query join* manual berulang kali.
     * *Data yang Ditampilkan:* No Nota, Tanggal Transaksi, Nama Kasir, Nama Pelanggan, dan Total Nominal Transaksi.
 
+## 📸 Bukti Implementasi Query (Demo)
+Berikut adalah bukti bahwa logika database berjalan dengan baik menggunakan query SQL yang kompleks.
+
+**Laporan Detail Transaksi (JOIN Query):**
+Query ini menggabungkan tabel `transaksi`, `kasir`, dan `produk` untuk menghasilkan struk belanja yang detail.
+
+<img width="817" height="196" alt="Screenshot 2026-01-18 153051" src="https://github.com/user-attachments/assets/ccf47ee7-e15b-432d-a2ee-448f955d2f79" />
+
+> **Keterangan:** Screenshot di atas membuktikan bahwa sistem berhasil melakukan **JOIN antar tabel**. Data yang ditampilkan bukan lagi kode angka (ID), melainkan nama kasir dan nama produk yang mudah dibaca.
+
 ## 📂 Struktur Repository
 * `/SQL`: Berisi file source code database (`.sql`) yang siap di-import ke MySQL Workbench.
 * `/Dokumen`: Berisi Laporan Tugas Akhir (PDF) Bab 1 s.d Bab 4.
@@ -70,4 +87,4 @@ Sistem ini terdiri dari 5 tabel utama yang saling berelasi:
 5.  Database siap digunakan untuk query transaksi.
 
 ---
-*Dibuat untuk memenuhi Tugas Akhir Semester - Dosen Pengampu: Ridwan Dwi Irawan, S.Kom., M.Kom.*
+*Dibuat untuk memenuhi Tugas Akhir Semester - Dosen Pengampu: Bapak Ridwan Dwi Irawan, S.Kom., M.Kom.*
