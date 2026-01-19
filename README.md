@@ -22,11 +22,29 @@ Sebelum adanya sistem ini, Soto Lorang menghadapi kendala:
 
 ## 🚀 Fitur & Solusi Basis Data
 Database ini dirancang menggunakan **MySQL** dengan penerapan **Normalisasi (hingga 3NF)** untuk menjamin integritas data. Fitur utamanya meliputi:
-
 1.  **Manajemen Data Master (CRUD):** Pengelolaan data Menu (Produk), Kasir, dan Pelanggan.
 2.  **Transaksi Penjualan:** Mencatat detail pesanan, menghitung total bayar, dan kembalian secara otomatis melalui Query.
 3.  **Laporan Keuangan:** Menggunakan fungsi agregasi (`SUM`, `COUNT`) untuk melihat total pendapatan harian/bulanan.
 4.  **Analisis Menu Terlaris:** Menggunakan fitur `GROUP BY` dan `HAVING` untuk melihat tren penjualan.
+
+## 🗂️ Struktur Tabel Database
+Sistem ini terdiri dari 5 tabel utama yang saling berelasi:
+
+1.  **`pelanggan`**
+    * Menyimpan data identitas pelanggan yang terdaftar.
+    * *Atribut:* ID, Nama, Alamat, No Telepon.
+2.  **`kasir`**
+    * Menyimpan data otentikasi petugas kasir (Username/Password) dan shift kerja.
+    * *Atribut:* ID, Nama Kasir, Username, Password, Shift.
+3.  **`produk`**
+    * Menyimpan daftar menu makanan/minuman beserta harga satuan dan stok tersedia.
+    * *Atribut:* ID, Nama Produk, Kategori, Harga, Stok.
+4.  **`transaksi`**
+    * Menyimpan data *header* nota (informasi umum setiap transaksi).
+    * *Atribut:* No Nota (PK), Waktu, Total Bayar, Bayar Tunai, Kembalian.
+5.  **`detail_transaksi`**
+    * Menyimpan rincian item menu yang dibeli dalam satu nomor nota.
+    * *Atribut:* ID Detail, Jumlah Beli, Subtotal Harga.
 
 ## 📂 Struktur Repository
 * `/SQL`: Berisi file source code database (`.sql`) yang siap di-import ke MySQL Workbench.
@@ -46,4 +64,4 @@ Database ini dirancang menggunakan **MySQL** dengan penerapan **Normalisasi (hin
 5.  Database siap digunakan untuk query transaksi.
 
 ---
-*Dibuat untuk memenuhi Tugas Akhir Semester - Dosen Pengampu: Bapak Ridwan Dwi Irawan, S.Kom., M.Kom.*
+*Dibuat untuk memenuhi Tugas Akhir Semester - Dosen Pengampu: Ridwan Dwi Irawan, S.Kom., M.Kom.*
