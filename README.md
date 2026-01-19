@@ -28,6 +28,8 @@ Database ini dirancang menggunakan **MySQL** dengan penerapan **Normalisasi (hin
 4.  **Analisis Menu Terlaris:** Menggunakan fitur `GROUP BY` dan `HAVING` untuk melihat tren penjualan.
 
 ## 🗂️ Struktur Tabel Database
+<img width="1353" height="643" alt="Screenshot 2026-01-18 142926" src="https://github.com/user-attachments/assets/504570de-278d-4fed-97d7-d3d66ecead44" />
+
 Sistem ini terdiri dari 5 tabel utama yang saling berelasi:
 
 1.  **`pelanggan`**
@@ -45,6 +47,10 @@ Sistem ini terdiri dari 5 tabel utama yang saling berelasi:
 5.  **`detail_transaksi`**
     * Menyimpan rincian item menu yang dibeli dalam satu nomor nota.
     * *Atribut:* ID Detail, Jumlah Beli, Subtotal Harga.
+6.  **`view_laporan_penjualan`** (View / Tabel Virtual)
+    * Merupakan tabel virtual yang menggabungkan data `transaksi`, `pelanggan`, dan `kasir` untuk keperluan rekapitulasi yang lebih cepat.
+    * *Fungsi:* Memudahkan pemilik melihat riwayat penjualan lengkap tanpa perlu melakukan *query join* manual berulang kali.
+    * *Data yang Ditampilkan:* No Nota, Tanggal Transaksi, Nama Kasir, Nama Pelanggan, dan Total Nominal Transaksi.
 
 ## 📂 Struktur Repository
 * `/SQL`: Berisi file source code database (`.sql`) yang siap di-import ke MySQL Workbench.
