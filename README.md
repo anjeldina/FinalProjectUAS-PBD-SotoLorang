@@ -3,8 +3,9 @@
 > **Final Project Mata Kuliah Pemrograman Basis Data**
 > **Universitas Duta Bangsa Surakarta**
 
-![WhatsApp Image 2026-01-19 at 11 55 11](https://github.com/user-attachments/assets/e0df7185-446a-4e5b-bd33-9502da7d5788)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e0df7185-446a-4e5b-bd33-9502da7d5788" alt="Poster Soto Lorang" width="600">
+</p>
 
 Repository ini berisi rancangan dan implementasi basis data untuk sistem kasir (Point of Sales) pada UMKM **Soto Lorang**. Proyek ini bertujuan untuk mentransformasi sistem pencatatan manual (nota kertas) menjadi sistem basis data terkomputerisasi yang terintegrasi.
 
