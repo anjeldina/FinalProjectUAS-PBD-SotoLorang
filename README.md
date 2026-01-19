@@ -1,4 +1,3 @@
-
 # 🍜 Sistem Penjualan (POS) Soto Lorang
 
 > **Final Project Mata Kuliah Pemrograman Basis Data**
@@ -7,12 +6,12 @@
 Repository ini berisi rancangan dan implementasi basis data untuk sistem kasir (Point of Sales) pada UMKM **Soto Lorang**. Proyek ini bertujuan untuk mentransformasi sistem pencatatan manual (nota kertas) menjadi sistem basis data terkomputerisasi yang terintegrasi.
 
 ## 👥 Anggota Kelompok
-| Nama | NIM | Peran |
-| :--- | :--- | :--- |
-| **Amanda Fitri Honestya** | 240103154 | Perancangan Database & Laporan |
-| **Anjel Dina Erawati** | 240103155 | Analisis Sistem & Normalisasi |
-| **Aulia Athifa Zahra** | 240103156 | Implementasi SQL & Testing |
-| **Nayla Putri Salsabila** | 240103172 | Desain Poster & Dokumentasi |
+| Nama | NIM |
+| :--- | :--- |
+| **Amanda Fitri Honestya** | 240103154 |
+| **Anjel Dina Erawati** | 240103155 |
+| **Aulia Athifa Zahra** | 240103156 |
+| **Nayla Putri Salsabila** | 240103172 |
 
 ## 📖 Latar Belakang Masalah
 Sebelum adanya sistem ini, Soto Lorang menghadapi kendala:
