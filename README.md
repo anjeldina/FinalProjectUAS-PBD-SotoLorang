@@ -86,4 +86,4 @@ Query ini menggabungkan tabel `transaksi`, `kasir`, dan `produk` untuk menghasil
 5.  Database siap digunakan untuk query transaksi.
 
 ---
-*Dibuat untuk memenuhi Tugas Akhir Semester - Dosen Pengampu: Bapak Ridwan Dwi Irawan, S.Kom., M.Kom.*
+*Dibuat untuk memenuhi Tugas Akhir Semester - Dosen Pengampu: Ridwan Dwi Irawan, S.Kom., M.Kom.*
